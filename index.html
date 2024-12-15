@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .glow-particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: radial-gradient(circle, #5A9EF8 0%, rgba(90, 158, 248, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="retrowave-bg animate__animated animate__fadeIn"></div>
+    <div class="retro-tiles">
+        <div class="tile-grid animate__animated animate__slideInUp"></div>
+    </div>
+    <div id="particles-js"></div>
+    <header class="header animate__animated animate__fadeInDown">
+        <div class="logo glow-effect cyberpunk-text">Krypton</div>
+    </header>
+    <main class="hero">
+        <div class="hero-content animate__animated animate__fadeInLeft">
+            <h1 class="hero-title">
+                <span class="gradient-text animate__animated animate__pulse animate__infinite cyberpunk-text">Level Up Your Experience With </span>
+                <span class="atlas-gradient glow-effect animate__animated animate__rubberBand cyberpunk-text">Krypton</span>
+            </h1>
+            <p class="hero-description animate__animated animate__fadeIn animate__delay-1s neon-text">
+                Take your Roblox games to the next level with Krypton! Our awesome executor lets you do cool stuff and run any script you want. Super fast and easy to use.
+            </p>
+            <div class="button-container animate__animated animate__bounceIn animate__delay-2s">
+                <a href="Media/Krypton.zip" download>
+                    <button class="download-btn cyberpunk-btn">
+                        <img src="Media/WindowsIcon.png" alt="Windows Icon" class="windows-icon" width="15" height="15">
+                        <i class="fas fa-download"></i>
+                        <span>Download For Windows</span>
+                        <div class="btn-glitch-effect"></div>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-container animate__animated animate__fadeInRight animate__delay-1s">
+            <img src="Media/Group 18155871.png" alt="Krypton Platform Preview" class="hero-image hologram-effect">
+        </div>
+    </main>
+
+    <main class="community-section">
+        <h1 class="section-title gradient-text animate__animated animate__fadeInDown">
+            Join Our Community
+        </h1>
+
+        <div class="community-grid animate__animated animate__fadeInUp">
+            <div class="community-card animate__animated animate__fadeIn">
+                <div class="card-icon">
+                    <img src="Media/DiscordIcon.png" alt="Discord Icon" width="60" height="60">
+                </div>
+                <h3 class="atlas-gradient">Discord Community</h3>
+                <p>Join our active Discord community with over 10,000 members</p>
+                <a href="https://discord.gg/yourlink" target="_blank">
+                    <button class="community-btn">Join Discord</button>
+                </a>
+            </div>
+
+            <div class="community-card animate__animated animate__fadeIn animate__delay-1s">
+                <div class="card-icon">
+                    <img src="Media/ForumIcon.png" alt="Forum Icon" width="60" height="60">
+                </div>
+                <h3 class="atlas-gradient">Forums</h3>
+                <p>Discuss scripts, share experiences, and get help from experts</p>
+                <button class="community-btn">Visit Forums</button>
+            </div>
+
+            <div class="community-card animate__animated animate__fadeIn animate__delay-2s">
+                <div class="card-icon">
+                    <img src="Media/TutorialIcon.png" alt="Tutorial Icon" width="60" height="60">
+                </div>
+                <h3 class="atlas-gradient">Tutorials</h3>
+                <p>Learn from our comprehensive guides and video tutorials</p>
+                <button class="community-btn">View Tutorials</button>
+            </div>
+        </div>
+
+        <div class="community-stats animate__animated animate__fadeInUp animate__delay-3s">
+            <div class="stat-item">
+                <span class="stat-number atlas-gradient">10K+</span>
+                <span class="stat-label">Community Members</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number atlas-gradient">5K+</span>
+                <span class="stat-label">Daily Active Users</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number atlas-gradient">1K+</span>
+                <span class="stat-label">Scripts Shared</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: ["#5A9EF8", "#3676EF"] },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false } },
+                    size: { value: 3, random: true, anim: { enable: true, speed: 2, size_min: 0.1, sync: false } },
+                    line_linked: { enable: true, distance: 150, color: "#5A9EF8", opacity: 0.3, width: 1 },
+                    move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out", bounce: false }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: { 
+                        onhover: { enable: true, mode: "grab" }, 
+                        onclick: { enable: true, mode: "push" }
+                    },
+                    modes: { 
+                        grab: { distance: 140, line_linked: { opacity: 0.5 } },
+                        push: { particles_nb: 4 }
+                    }
+                },
+                retina_detect: true
+            });
+        });
+    </script>
+</body>
+</html>
