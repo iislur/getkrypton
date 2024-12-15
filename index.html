@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        body {
+            background-color: #1c1c1c; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         .glow-particle {
             position: absolute;
             width: 5px;
@@ -17,6 +24,25 @@
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .card {
+            background-color: #2c2c2c; /* Slightly lighter dark background */
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .card-title {
+            color: #00aaff; /* Bright blue title color */
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            color: #bfbfbf; /* Light gray description */
+            font-size: 14px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -54,57 +80,13 @@
         </div>
     </main>
 
-    <main class="community-section">
-        <h1 class="section-title gradient-text animate__animated animate__fadeInDown">
-            Join Our Community
-        </h1>
-
-        <div class="community-grid animate__animated animate__fadeInUp">
-            <div class="community-card animate__animated animate__fadeIn">
-                <div class="card-icon">
-                    <img src="Media/DiscordIcon.png" alt="Discord Icon" width="60" height="60">
-                </div>
-                <h3 class="atlas-gradient">Discord Community</h3>
-                <p>Join our active Discord community with over 10,000 members</p>
-                <a href="https://discord.gg/yourlink" target="_blank">
-                    <button class="community-btn">Join Discord</button>
-                </a>
-            </div>
-
-            <div class="community-card animate__animated animate__fadeIn animate__delay-1s">
-                <div class="card-icon">
-                    <img src="Media/ForumIcon.png" alt="Forum Icon" width="60" height="60">
-                </div>
-                <h3 class="atlas-gradient">Forums</h3>
-                <p>Discuss scripts, share experiences, and get help from experts</p>
-                <button class="community-btn">Visit Forums</button>
-            </div>
-
-            <div class="community-card animate__animated animate__fadeIn animate__delay-2s">
-                <div class="card-icon">
-                    <img src="Media/TutorialIcon.png" alt="Tutorial Icon" width="60" height="60">
-                </div>
-                <h3 class="atlas-gradient">Tutorials</h3>
-                <p>Learn from our comprehensive guides and video tutorials</p>
-                <button class="community-btn">View Tutorials</button>
-            </div>
+    <!-- New Card Section -->
+    <div class="card animate__animated animate__fadeInUp">
+        <div class="card-title">Download Krypton Roblox Executor Today!</div>
+        <div class="card-description">
+            Take your Roblox games to the next level with Krypton! Our awesome executor lets you do cool stuff and run any script you want. Super fast and easy to use.
         </div>
-
-        <div class="community-stats animate__animated animate__fadeInUp animate__delay-3s">
-            <div class="stat-item">
-                <span class="stat-number atlas-gradient">10K+</span>
-                <span class="stat-label">Community Members</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number atlas-gradient">5K+</span>
-                <span class="stat-label">Daily Active Users</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number atlas-gradient">1K+</span>
-                <span class="stat-label">Scripts Shared</span>
-            </div>
-        </div>
-    </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
